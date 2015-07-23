@@ -1,0 +1,13 @@
+<h1><%= @advertisement.format %></h1>
+  
+
+<p><strong>Bleed</strong></p>
+<p><%= @advertisement.bleed_height %> x <%= @advertisement.bleed_width %></p>
+
+<p><strong>Trim</strong></p>
+<p><%= @advertisement.trim_height %> x <%= @advertisement.trim_width %></p>
+
+<p><strong>Type</strong></p>
+<p><%= @advertisement.type_height %> x <%= @advertisement.type_width %></p>
+
+<%= link_to 'Edit Placement', edit_advertisement_path %>

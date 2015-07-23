@@ -1,0 +1,33 @@
+<h1>Advertisements</h1>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Format</th>
+        <th>Bleed Height</th>
+        <th>Bleed Width</th>
+        <th>Trim Height</th>
+        <th>Trim Width</th>
+        <th>Type Height</th>
+        <th>Type Width</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @advertisements.each do |advertisement| %>
+        <tr>
+          <td><%= link_to advertisement.format, advertisement_path(advertisement) %></td>
+          <td><%= advertisement.bleed_height %></td>
+          <td><%= advertisement.bleed_width %></td>
+          <td><%= advertisement.trim_height %></td>
+          <td><%= advertisement.trim_width %></td>
+          <td><%= advertisement.type_height %></td>
+          <td><%= advertisement.type_width %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+  <div> 
+  <%= link_to 'Add New Placement', new_advertisement_path %>
+  </div>

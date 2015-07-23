@@ -1,0 +1,40 @@
+<%= form_for :advertisement, url: advertisements_path do |f| %>
+  <p>
+    <%= f.label :format %><br>
+    <%= f.text_field :format %>
+  </p>
+ 
+  <p>
+    <%= f.label :bleed_height %><br>
+    <%= f.text_field :bleed_height %>
+  </p>
+ 
+  <p>
+    <%= f.label :bleed_width %><br>
+    <%= f.text_field :bleed_width %>
+  </p>
+
+  <p>
+    <%= f.label :trim_height %><br>
+    <%= f.text_field :trim_height %>
+  </p>
+ 
+  <p>
+    <%= f.label :trim_width %><br>
+    <%= f.text_field :trim_width %>
+  </p>
+
+  <p>
+    <%= f.label :type_height %><br>
+    <%= f.text_field :type_height %>
+  </p>
+ 
+  <p>
+    <%= f.label :type_width %><br>
+    <%= f.text_field :type_width %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
