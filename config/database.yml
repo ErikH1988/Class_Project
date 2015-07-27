@@ -20,6 +20,7 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+# SDP: This is unsupported on Heroku, so can be removed
 production:
   <<: *default
   database: db/production.sqlite3

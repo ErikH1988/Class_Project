@@ -1,6 +1,7 @@
 class CreateAdvertisements < ActiveRecord::Migration
   def change
     create_table :advertisements do |t|
+      # SDP: Can all these fields take a null value? Especially format
       t.string :format
       t.integer :bleed_height
       t.integer :bleed_width

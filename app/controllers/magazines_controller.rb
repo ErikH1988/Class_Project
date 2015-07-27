@@ -4,6 +4,8 @@ class MagazinesController < ApplicationController
   end
 
   def show
+    # SDP: What happens, if the user id cannot be found? Rails will raise an error which
+    # can cause problems
   	@magazine = Magazine.find(params[:id])
   end
 
@@ -23,6 +25,7 @@ class MagazinesController < ApplicationController
 
   private
 
+    # SDP: Please check the format of your code, use a tool like Rubocop
     def magazine_params
     params
       .require(:magazine)
